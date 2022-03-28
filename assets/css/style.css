@@ -27,7 +27,7 @@ h1, h2 {text-transform: capitalize;
             max-width: 60%;
             margin: auto;
             margin-top: 1.25rem;
-    background-color: #3e4a3d;}                                            
+    /*background-color: #3e4a3d;*/}                                             
 
 h1 {text-align: center;
     margin: auto;
@@ -39,4 +39,87 @@ h2 {text-align: center;
     margin: auto;
     margin-top: 1.25rem;
     /* padding: 1.25rem; */
+}
+
+                                            /********************* GAME AREA *******************/
+
+#game-area {max-width: 62.5rem; /*1000px*/
+            min-height: 50rem; /*800px*/
+            margin: 1.25rem auto;
+            border-radius: 20px;
+            box-shadow: 3px 3px 3px #3e4a3d;
+            position: relative;
+            background-color: rgb(252, 252, 212, 0.5);
+}
+
+#image-area {width: 300px;
+             height: 300px;
+             position: absolute;
+             top: 1.875rem; /*30px*/
+             left: 50%;
+             transform: translateX(-50%);
+             border-radius: 20px;
+             /* margin: 1.25rem auto;
+             background-color: #39e3e8; */
+             overflow: hidden;
+}
+
+#logo {height: 100%;
+       width: 100%;
+       background-repeat: no-repeat;
+       background-position: center;
+       
+}
+
+#options-area {width: 100%;
+               min-height: 6.25rem;
+               position: absolute;
+               left: 0;
+               bottom: 10.625rem; /*170px*/
+               display: flex;
+               gap: 1rem
+               /* justify-content: center; */
+               /* background-color: #3be9db; */
+}
+
+#options-area > span {/*display: flex;*/
+    /* width: 33%;
+    min-height: 75%; */
+    margin: auto;
+    /* background-color: brown; */
+}
+.radio-buttons {margin: 1.25rem 0.5rem 1.25rem 1.563rem;
+                width: 20px;
+                height: 20px;
+}
+
+label {margin-right: 1.25rem;
+       /* background-color: #39e3e8; */
+       font-size: 20px;
+}
+
+#submit-section {width: 50%;
+                height: 6.25rem;
+                 position: absolute;
+                 bottom: 3.75rem;
+                 left: 25%;
+                 display: flex;
+                 justify-content: center;
+                 /* background-color: #3e4a3d; */
+}
+
+#submit-button {width: 90px;
+               height: 40px;
+               margin: auto;
+               border: none;
+               border-radius: 5px;
+               background-image: var(--bg-color);
+               background-size: 200%;
+               transition: background-size 0.4s ease-in;
+}
+
+#submit-button:hover {background-image: var(--bg-color);
+                      background-size: 400%;
+                      box-shadow: 2px 2px 2px;
+
 }
