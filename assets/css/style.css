@@ -155,3 +155,22 @@ label {margin-right: 1.25rem;
     box-shadow: 2px 2px 2px;
 
 }
+
+                                                        /******************* SCORE AREA ********************/
+
+#score-area {max-width: 62.5rem;
+             min-height: 8.375rem;
+             margin: 1.25rem auto;
+             display: flex;
+             gap: 2rem;
+             /* background-color: #39e3e8; */
+
+}
+
+#score-area> p {flex: 1;
+                margin: auto;
+                font-size: 130%;
+                font-weight: 600;
+                text-align: center;
+                /* background-color: firebrick; */
+}
