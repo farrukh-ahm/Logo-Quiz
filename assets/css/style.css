@@ -6,7 +6,7 @@
    box-sizing: border-box;
 }
 
-:root {--bg-color: linear-gradient(to right, #f8f7ac, #ebf7a4, #dcf69d, #cbf699, #b8f696, #a2f69f, #8af5a9, #6ff3b4, #51efc9, #3be9db, #39e3e8, #4bdbf0);}
+:root {--bg-color: linear-gradient(to right top, #f8f7ac, #ebf7a4, #dcf69d, #cbf699, #b8f696, #a2f69f, #8af5a9, #6ff3b4, #51efc9, #3be9db, #39e3e8, #4bdbf0);}
 
 body { background-image: var(--bg-color);
        font-family: 'Josefin Sans', sans-serif;
@@ -114,12 +114,15 @@ label {margin-right: 1.25rem;
                border: none;
                border-radius: 5px;
                background-image: var(--bg-color);
-               background-size: 200%;
-               transition: background-size 0.4s ease-in;
+               background-size: 400%;
+               background-position: left;
+               transition: all 0.3s ease-in;
+               color: inherit;
+               font-family: inherit;
+               font-weight: 600;
 }
 
-#submit-button:hover {background-image: var(--bg-color);
-                      background-size: 400%;
+#submit-button:hover {background-position: center;
                       box-shadow: 2px 2px 2px;
 
 }
