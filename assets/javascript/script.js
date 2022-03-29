@@ -38,3 +38,21 @@ let aiChoice = ["KFC", "Gatorade", "Pizza-Hut", "Monster-Energy", "Costa-Coffee"
                 "Accenture", "Amnesty-International", "WWF", "Unilever", "United-Nations",
                 "Atletico-Madrid", "Borussia-Dortmund", "Inter-Milan", "Real-Madrid", "AS-Roma"
 ]
+
+/// ----------------- CALLING THE ELEMENTS
+
+let buttons = document.getElementsByTagName("button");
+
+for (let button of buttons){
+    button.addEventListener("click", function(){
+        if (this.getAttribute("data-button") === "start"){
+            displayQuestion();
+        }
+        else if (this.getAttribute("data-button") === "reset"){
+            resetGame();
+        }
+        else if (this.getAttribute("data-button") === "submit"){
+            displayResult();
+        }
+    })
+}
