@@ -4,6 +4,7 @@ let optionList = {"KFC": ["McDonalds", "KFC", "Taco-Bell", "Chipotle"],
                   "Gatorade": ["GFuel", "Lucozade", "Gatorade", "Electrolit"],
                   "Pizza-Hut": ["Pizza-Hut", "Domino's", "Papa-John's", "California-Pizza"],
                   "Costa-Coffee": ["Starbucks", "Lavazza", "Butlers-Chocolates", "Costa-Coffee"],
+                  "Monster-Energy": ["Red-Bull", "Monster-Energy", "Lucozade", "Advance.GG"],
                   "Bentley": ["Aston-Martin", "Bentley", "Rolls-Royce", "Beetle"],
                   "Cadillac": ["Cadillac", "Volvo", "Mercedes", "Bugatti"],
                   "Corvette": ["Alfa-Romeo", "Ford", "Corvette", "Citroen"],
@@ -41,50 +42,83 @@ let aiChoice = ["KFC", "Gatorade", "Pizza-Hut", "Monster-Energy", "Costa-Coffee"
 
 /// ----------------- CALLING THE ELEMENTS
 
-let buttons = document.getElementsByTagName("button");
-let imageSelector = document.getElementById("logo");
-let labels = document.getElementsByTagName("label");
-let radios = document.getElementsByClassName("radio-buttons");
-
-for (let button of buttons){
-    button.addEventListener("click", function(){
-        if (this.getAttribute("data-button") === "start"){
-            displayQuestion();
-        }
-        else if (this.getAttribute("data-button") === "reset"){
-            resetGame();
-        }
-        else if (this.getAttribute("data-button") === "submit"){
-            displayResult();
-        }
-    })
+let logoSelector;
+let questionNumber = 1;
+document.addEventListener("DOMContentLoaded", function(){
+    let buttons = document.getElementsByTagName("button");
+    for (let button of buttons){
+        button.addEventListener("click", function(){
+            if (this.getAttribute("data-button") === "start"){
+                displayQuestion();
+            }
+            else if (this.getAttribute("data-button") === "reset"){
+                resetGame();
+            }
+            else if (this.getAttribute("data-button") === "submit"){
+                displayResult();
+            }
+            else {alert ("Break")}
+        })
 }
+})
+
 
 /// ----------------------- Start/display the question
 
 function displayQuestion(){
+    if (questionNumber <= 2){
     let randomNumber = Math.floor(Math.random() * 30);
-    let logoSelector = aiChoice[randomNumber];
+    logoSelector = aiChoice[randomNumber];
     let options = optionList[logoSelector];
+    let imageSelector = document.getElementById("logo");
+    let labels = document.getElementsByTagName("label");
     imageSelector.src = `./assets/images/${aiChoice[randomNumber]}.png`;
     let i = 0;
     for (let label of labels){
         label.textContent = options[i];
         i++
-    }
+    }}
+    else{alert("Done!");
+        resetGame();
+};
+    questionNumber ++;
 }
 
 /// ------------------------ Display Result
 
 function displayResult() {
-
+    let userAnswer = checkAnswer();
+    // console.log(userAnswer);
+    // console.log(typeof userAnswer);
+    // console.log(logoSelector);
+    let selectedQuestion = logoSelector;
+    // console.log(checkLabel)
+    if (userAnswer === selectedQuestion){
+        alert ("Right!");
+        displayQuestion();
+    }
+    else {alert ("Wrong!")
+    displayQuestion();
+}
 }
 
 /// ------------------------ Game Reset/Restart
 
 function resetGame() {
-
+    let imageSelector = document.getElementById("logo");
+    imageSelector.src = `./assets/images/question.png`;
 }
 
 /// ------------------------ Check Answer
 
+function checkAnswer() {
+    let radios = document.getElementsByTagName("input");
+    for (let radio of radios){
+        if (radio.checked){
+            // let selected = radio.id;
+            let checkLabel = document.querySelector(`label[for=${radio.id}]`).textContent;
+            // console.log(checkLabel)
+            return (checkLabel);
+        }
+    }
+}
