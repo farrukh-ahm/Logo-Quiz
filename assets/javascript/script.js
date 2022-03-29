@@ -42,6 +42,9 @@ let aiChoice = ["KFC", "Gatorade", "Pizza-Hut", "Monster-Energy", "Costa-Coffee"
 /// ----------------- CALLING THE ELEMENTS
 
 let buttons = document.getElementsByTagName("button");
+let imageSelector = document.getElementById("logo");
+let labels = document.getElementsByTagName("label");
+let radios = document.getElementsByClassName("radio-buttons");
 
 for (let button of buttons){
     button.addEventListener("click", function(){
@@ -56,3 +59,32 @@ for (let button of buttons){
         }
     })
 }
+
+/// ----------------------- Start/display the question
+
+function displayQuestion(){
+    let randomNumber = Math.floor(Math.random() * 30);
+    let logoSelector = aiChoice[randomNumber];
+    let options = optionList[logoSelector];
+    imageSelector.src = `./assets/images/${aiChoice[randomNumber]}.png`;
+    let i = 0;
+    for (let label of labels){
+        label.textContent = options[i];
+        i++
+    }
+}
+
+/// ------------------------ Display Result
+
+function displayResult() {
+
+}
+
+/// ------------------------ Game Reset/Restart
+
+function resetGame() {
+
+}
+
+/// ------------------------ Check Answer
+
