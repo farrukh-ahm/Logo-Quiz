@@ -68,7 +68,17 @@ document.addEventListener("DOMContentLoaded", function(){
 /// ----------------------- Start/display the question
 
 function displayQuestion(mode){
-    let resultMessage = document.getElementById("result-message");
+    let resultMessage = document.getElementById("result-message");               // Calling div containing the relust message.
+    let displayElements = document.getElementsByClassName("display-property");   // Calling options and submit button elements.
+    for (let display of displayElements){
+        display.style.display = "initial";                                       // Displaying the options area by changing "none" property
+    }
+    let radios = document.getElementsByTagName("input");                         // Unchecking the radio buttons before displaying the options
+    for (let radio of radios){
+        if (radio.checked){
+            radio.checked = false;
+        }
+    }
     if (questionNumber <= mode){
         resultMessage.textContent = ""
     let randomNumber = Math.floor(Math.random() * 30);
@@ -85,7 +95,7 @@ function displayQuestion(mode){
     else{
         
         resultMessage.textContent = "FINISH!"
-        resetGame();
+        setTimeout(() => { resetGame(); }, 1000);
 };
     questionNumber++;
 }
@@ -112,7 +122,14 @@ function displayResult(mode) {
 
 function resetGame() {
     let imageSelector = document.getElementById("logo");
+    let displayElements = document.getElementsByClassName("display-property");
+    let resultMessage = document.getElementById("result-message");
     imageSelector.src = `./assets/images/question.png`;
+    resultMessage.textContent = "";
+    for (let display of displayElements){
+        display.style.display = "none"
+    }
+    questionNumber = 1;
 }
 
 /// ------------------------ Check Answer

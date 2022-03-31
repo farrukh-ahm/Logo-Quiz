@@ -145,6 +145,8 @@ label {margin-right: 1.25rem;
 
 }
 
+.display-property {display: none;}
+
                                             /************* RULES SECTION *******************/
 
 #rules-div {max-width: 62.5rem;
