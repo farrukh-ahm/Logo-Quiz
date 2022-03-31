@@ -161,15 +161,26 @@ label {margin-right: 1.25rem;
                                             /************* START-RESET BUTTON SECTION ***************/
 
 #start-reset-section {max-width: 62.5rem;
-                      height: 6.25rem;
-                      margin: 1.25rem auto;
+                      height: 6.5rem;
+                      margin: 1.75rem auto;
                       display: flex;
-                      gap: 2rem;
+                      gap: 1rem;
+                      flex-direction: column;
                       /* background-color: #3be9db;                       */
 }
 
+.bttns-div {max-width: 50%;
+            height: 100%;
+            flex: 1;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            /* background-color: #3e4a3d; */
+}
+
 .bttns {height: 40px;
-        max-width: 90px;
+        width: 90px;
         flex: 1;
         margin: auto;
         border: none;
@@ -177,12 +188,13 @@ label {margin-right: 1.25rem;
         background-image: var(--bg-color);
         background-size: 400%;
         background-position: left;
-        transition: all 0.3s ease-in;
+        transition: background-position 0.3s ease-in;
         color: inherit;
         font-family: inherit;
         font-weight: 600;
+        cursor: pointer;
 }
-.bttns:hover, .bttns:focus {background-position: center;
+.bttns:hover {background-position: center;
     box-shadow: 2px 2px 2px;
 
 }
@@ -191,7 +203,7 @@ label {margin-right: 1.25rem;
 
 #score-area {max-width: 62.5rem;
              min-height: 8.375rem;
-             margin: 1.25rem auto;
+             margin: 1.5rem auto;
              display: flex;
              gap: 2rem;
              /* background-color: #39e3e8; */
