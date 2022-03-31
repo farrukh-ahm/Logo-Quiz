@@ -134,13 +134,13 @@ label {margin-right: 1.25rem;
                background-image: var(--bg-color);
                background-size: 400%;
                background-position: left;
-               transition: all 0.3s ease-in;
+               transition: background-position 0.3s ease-in;
                color: inherit;
                font-family: inherit;
                font-weight: 600;
 }
 
-#submit-button:hover, #submit-button:focus {background-position: center;
+#submit-button:hover{background-position: center;
                       box-shadow: 2px 2px 2px;
 
 }

@@ -80,23 +80,27 @@ function displayQuestion(mode){
         label.textContent = options[i];
         i++
     }}
-    else{alert("Done!");
+    else{
+        let resultMessage = document.getElementById("result-message");
+        resultMessage.textContent = "FINISH!"
         resetGame();
 };
-    questionNumber ++;
+    ++questionNumber;
 }
 
 /// ------------------------ Display Result
 
 function displayResult(mode) {
+    let resultMessage = document.getElementById("result-message");
     let userAnswer = checkAnswer();
     let selectedQuestion = logoSelector;
     if (userAnswer === selectedQuestion){
-        alert ("Right!");
+        resultMessage.innerText = "CORRECT!";
         displayQuestion(mode);
     }
-    else {alert ("Wrong!")
-    displayQuestion(mode);
+    else {
+        resultMessage.innerText = "SORRY!";
+        displayQuestion(mode);
 }
 }
 
