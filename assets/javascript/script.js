@@ -44,18 +44,20 @@ let aiChoice = ["KFC", "Gatorade", "Pizza-Hut", "Monster-Energy", "Costa-Coffee"
 
 let logoSelector;
 let questionNumber = 1;
+let mode;
 document.addEventListener("DOMContentLoaded", function(){
     let buttons = document.getElementsByTagName("button");
     for (let button of buttons){
         button.addEventListener("click", function(){
             if (this.getAttribute("data-button") === "start"){
-                displayQuestion();
-            }
+                mode = parseInt(this.getAttribute("data-mode"))
+                displayQuestion(mode);
+                }
             else if (this.getAttribute("data-button") === "reset"){
                 resetGame();
             }
             else if (this.getAttribute("data-button") === "submit"){
-                displayResult();
+                displayResult(mode);
             }
             else {alert ("Break")}
         })
@@ -65,8 +67,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
 /// ----------------------- Start/display the question
 
-function displayQuestion(){
-    if (questionNumber <= 2){
+function displayQuestion(mode){
+    if (questionNumber <= mode){
     let randomNumber = Math.floor(Math.random() * 30);
     logoSelector = aiChoice[randomNumber];
     let options = optionList[logoSelector];
@@ -86,19 +88,15 @@ function displayQuestion(){
 
 /// ------------------------ Display Result
 
-function displayResult() {
+function displayResult(mode) {
     let userAnswer = checkAnswer();
-    // console.log(userAnswer);
-    // console.log(typeof userAnswer);
-    // console.log(logoSelector);
     let selectedQuestion = logoSelector;
-    // console.log(checkLabel)
     if (userAnswer === selectedQuestion){
         alert ("Right!");
-        displayQuestion();
+        displayQuestion(mode);
     }
     else {alert ("Wrong!")
-    displayQuestion();
+    displayQuestion(mode);
 }
 }
 
