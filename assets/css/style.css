@@ -71,6 +71,24 @@ h2 {text-align: center;
        
 }
 
+#result-message-area {width: 50%;
+                      height: 6.25rem;
+                      position: absolute;
+                      left: 50%;
+                      transform: translateX(-50%);
+                      bottom: 17rem;
+                      display: flex;
+                      justify-content: center;
+                      /* background-color: #3be9db; */
+}
+
+#result-message {font-size: 150%;
+                 font-weight: 700;
+                 margin: auto;
+                 letter-spacing: 1px;
+                 /* font-family: 'Indie Flower', cursive; */
+}
+
 #options-area {width: 100%;
                min-height: 6.25rem;
                position: absolute;
