@@ -68,7 +68,9 @@ document.addEventListener("DOMContentLoaded", function(){
 /// ----------------------- Start/display the question
 
 function displayQuestion(mode){
+    let resultMessage = document.getElementById("result-message");
     if (questionNumber <= mode){
+        resultMessage.textContent = ""
     let randomNumber = Math.floor(Math.random() * 30);
     logoSelector = aiChoice[randomNumber];
     let options = optionList[logoSelector];
@@ -81,11 +83,11 @@ function displayQuestion(mode){
         i++
     }}
     else{
-        let resultMessage = document.getElementById("result-message");
+        
         resultMessage.textContent = "FINISH!"
         resetGame();
 };
-    ++questionNumber;
+    questionNumber++;
 }
 
 /// ------------------------ Display Result
@@ -96,11 +98,13 @@ function displayResult(mode) {
     let selectedQuestion = logoSelector;
     if (userAnswer === selectedQuestion){
         resultMessage.innerText = "CORRECT!";
-        displayQuestion(mode);
+        setTimeout(() => { displayQuestion(mode); }, 1000);
+        // displayQuestion(mode);
     }
     else {
         resultMessage.innerText = "SORRY!";
-        displayQuestion(mode);
+        setTimeout(() => { displayQuestion(mode); }, 1000)
+        // displayQuestion(mode);
 }
 }
 
