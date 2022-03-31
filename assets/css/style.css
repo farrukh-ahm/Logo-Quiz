@@ -127,6 +127,37 @@ label {margin-right: 1.25rem;
 
 }
 
+                                            /************* RULES SECTION *******************/
+
+#rules-div {max-width: 62.5rem;
+            min-height: 12.5rem;
+            margin: 1.25rem auto;
+            border-radius: 20px;
+            box-shadow: 3px 3px 3px #3e4a3d;
+            position: relative;
+            background-color: rgb(252, 252, 212, 0.5);
+}
+
+#rule-list {width: 50%;
+            height: 70%;
+            position: absolute;
+            top: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            letter-spacing: 1px;
+            line-height: 1.5rem;
+}
+
+#rules-div > p {width: 50%;
+                position: absolute;
+                bottom: 2rem;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 120%;
+                font-weight: 700;
+                color: #ff7a90;
+}
+
                                             /************* START-RESET BUTTON SECTION ***************/
 
 #start-reset-section {max-width: 62.5rem;
