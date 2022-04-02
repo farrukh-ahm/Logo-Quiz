@@ -94,9 +94,10 @@ function displayQuestion(mode){
         i++
     }}
     else{
-        
-        resultMessage.textContent = "FINISH!"
-        setTimeout(() => { resetGame(); }, 1000);
+        let correctScore = document.getElementById("correct-answer").textContent;
+        // let incorrectScore = document.getElementById("incorrect-answer").textContent;
+        resultMessage.textContent = `FINISH! Score: ${correctScore}/${mode}`
+        setTimeout(() => { resetGame(); }, 1500);
 };
     questionNumber++;
 }
@@ -110,11 +111,13 @@ function displayResult(mode) {
     if (userAnswer === selectedQuestion){
         resultMessage.innerText = "CORRECT!";
         setTimeout(() => { displayQuestion(mode); }, 1000);
+        correctScore();
         // displayQuestion(mode);
     }
     else {
         resultMessage.innerText = "SORRY!";
-        setTimeout(() => { displayQuestion(mode); }, 1000)
+        setTimeout(() => { displayQuestion(mode); }, 1000);
+        incorrectScore();
         // displayQuestion(mode);
 }
 }
@@ -125,9 +128,13 @@ function resetGame() {
     let imageSelector = document.getElementById("logo");
     let displayElements = document.getElementsByClassName("display-property");
     let resultMessage = document.getElementById("result-message");
+    let correctScore = document.getElementById("correct-answer");
+    let incorrectScore = document.getElementById("incorrect-answer");
     imageSelector.src = `./assets/images/question.png`;
     imageSelector.style.height = "100%"
     resultMessage.textContent = "";
+    correctScore.innerText = "0";
+    incorrectScore.innerText = "0";
     for (let display of displayElements){
         display.style.display = "none"
     }
@@ -146,4 +153,20 @@ function checkAnswer() {
             return (checkLabel);
         }
     }
+}
+
+/// ---------------------------- Increment Correct Score
+
+function correctScore() {
+    let rightAnswer = document.getElementById("correct-answer");
+    let score= parseInt(rightAnswer.innerText);
+    rightAnswer.innerText = score+1;
+}
+
+/// ----------------------------- Increment Incorrect Score
+
+function incorrectScore() {
+    let wrongAnswer = document.getElementById("incorrect-answer");
+    let wScore= parseInt(wrongAnswer.innerText);
+    wrongAnswer.innerText = wScore+1;
 }
