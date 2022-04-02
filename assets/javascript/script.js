@@ -87,6 +87,7 @@ function displayQuestion(mode){
     let imageSelector = document.getElementById("logo");
     let labels = document.getElementsByTagName("label");
     imageSelector.src = `./assets/images/${aiChoice[randomNumber]}.png`;
+    imageSelector.style.height = "80%";
     let i = 0;
     for (let label of labels){
         label.textContent = options[i];
@@ -125,6 +126,7 @@ function resetGame() {
     let displayElements = document.getElementsByClassName("display-property");
     let resultMessage = document.getElementById("result-message");
     imageSelector.src = `./assets/images/question.png`;
+    imageSelector.style.height = "100%"
     resultMessage.textContent = "";
     for (let display of displayElements){
         display.style.display = "none"

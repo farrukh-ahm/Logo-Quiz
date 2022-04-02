@@ -44,7 +44,7 @@ h2 {text-align: center;
                                             /********************* GAME AREA *******************/
 
 #game-area {max-width: 62.5rem; /*1000px*/
-            min-height: 50rem; /*800px*/
+            min-height: 56.25rem; /*900px*/
             margin: 1.25rem auto;
             border-radius: 20px;
             box-shadow: 3px 3px 3px #3e4a3d;
@@ -59,15 +59,18 @@ h2 {text-align: center;
              left: 50%;
              transform: translateX(-50%);
              border-radius: 20px;
-             /* margin: 1.25rem auto;
-             background-color: #39e3e8; */
+             /* margin: 1.25rem auto;*/
+             /* background-color: #39e3e8; */
              overflow: hidden;
 }
 
 #logo {height: 100%;
        width: 100%;
-       background-repeat: no-repeat;
+       /* margin: 10% auto; */
+       /* border-radius: 10px; */
+       /* background-repeat: no-repeat;
        background-position: center;
+       background-size: 50%; */
        
 }
 
@@ -76,7 +79,7 @@ h2 {text-align: center;
                       position: absolute;
                       left: 50%;
                       transform: translateX(-50%);
-                      bottom: 17rem;
+                      bottom: 23.5rem;
                       display: flex;
                       justify-content: center;
                       /* background-color: #3be9db; */
@@ -93,7 +96,7 @@ h2 {text-align: center;
                min-height: 6.25rem;
                position: absolute;
                left: 0;
-               bottom: 10.625rem; /*170px*/
+               bottom: 15.25rem; /*244px*/
                display: flex;
                gap: 1rem
                /* justify-content: center; */
@@ -117,9 +120,9 @@ label {margin-right: 1.25rem;
 }
 
 #submit-section {width: 50%;
-                height: 6.25rem;
+                height: 8.25rem;
                  position: absolute;
-                 bottom: 3.75rem;
+                 bottom: 6.65rem;
                  left: 25%;
                  display: flex;
                  justify-content: center;
@@ -143,6 +146,27 @@ label {margin-right: 1.25rem;
 #submit-button:hover{background-position: center;
                       box-shadow: 2px 2px 2px;
 
+}
+
+#score-area {width: 55rem;
+    min-height: 7.5rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    /* margin: 1.5rem auto; */
+    display: flex;
+    gap: 2rem;
+    /* background-color: #39e3e8; */
+
+}
+
+#score-area> p {flex: 1;
+       margin: auto;
+       font-size: 130%;
+       font-weight: 600;
+       text-align: center;
+       /* background-color: firebrick; */
 }
 
 .display-property {display: none;}
@@ -170,7 +194,7 @@ label {margin-right: 1.25rem;
 
 #rules-div > p {width: 50%;
                 position: absolute;
-                bottom: 2rem;
+                bottom: 1.25rem;
                 left: 50%;
                 transform: translateX(-50%);
                 font-size: 120%;
@@ -217,23 +241,4 @@ label {margin-right: 1.25rem;
 .bttns:hover {background-position: center;
     box-shadow: 2px 2px 2px;
 
-}
-
-                                                        /******************* SCORE AREA ********************/
-
-#score-area {max-width: 62.5rem;
-             min-height: 8.375rem;
-             margin: 1.5rem auto;
-             display: flex;
-             gap: 2rem;
-             /* background-color: #39e3e8; */
-
-}
-
-#score-area> p {flex: 1;
-                margin: auto;
-                font-size: 130%;
-                font-weight: 600;
-                text-align: center;
-                /* background-color: firebrick; */
 }
