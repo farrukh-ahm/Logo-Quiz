@@ -148,7 +148,7 @@ label {margin-right: 1.25rem;
 
 }
 
-#score-area {width: 55rem;
+#score-area {width: 80%;
     min-height: 7.5rem;
     position: absolute;
     bottom: 1rem;
@@ -190,6 +190,7 @@ label {margin-right: 1.25rem;
             transform: translateX(-50%);
             letter-spacing: 1px;
             line-height: 1.5rem;
+            /* background-color: #39e3e8; */
 }
 
 #rules-div > p {width: 50%;
@@ -200,6 +201,7 @@ label {margin-right: 1.25rem;
                 font-size: 120%;
                 font-weight: 700;
                 color: #ff7a90;
+                /* background-color: #51efc9; */
 }
 
                                             /************* START-RESET BUTTON SECTION ***************/
@@ -241,4 +243,88 @@ label {margin-right: 1.25rem;
 .bttns:hover {background-position: center;
     box-shadow: 2px 2px 2px;
 
+}
+
+                                                /* -------------- MEDIA QUERIES ------------ */
+
+                    /* --- 740px and below --- */
+
+@media screen and (max-width: 740px){
+    #rule-list {width: 70%;}
+    #rules-div > p {width: 70%;}
+    /* #score-area {gap:0;
+        width: 80%;
+        background-color: #6ff3b4; 
+}*/
+}
+
+
+                    /* ---- 680px and below ---- */
+
+@media screen and (max-width: 680px) {
+    #options-area {display: grid;
+                   grid-template-columns: repeat(2, 1fr);
+                   gap: 1rem;
+                   align-items: start;
+}
+
+#options-area > span {/*display: flex;*/
+    /* width: 33%;
+    min-height: 75%; */
+    margin: initial;
+    /* background-color: brown; */
+}
+    #score-area {gap:0;
+                 /* width: 80%; */
+                 /* background-color: #6ff3b4; */
+    }
+}
+
+
+                    /* ---- 520px and below --- */
+
+@media screen and (max-width: 520px) {
+    /* #score-area {width: 30rem;} */
+
+    #rule-list {width: 80%;}
+    #rules-div > p {width: 80%;}
+    
+}
+
+                    /* ---- 450px and below --- */
+
+@media screen and (max-width: 450px) {
+
+    #game-area {min-height: 950px;}
+
+    #options-area {grid-template-columns: repeat(1, 1fr);
+        bottom: 13rem;
+                  
+    }
+
+    .radio-buttons {margin: 1.25rem 0.5rem 1.25rem 1.563rem;
+                    width: 15px;
+                    height: 15px;
+}
+
+    label {margin-right: 1.25rem;
+           font-size: 18px;
+}
+
+    #result-message-area {bottom: 30rem;}
+    
+    #score-area {/*display: block;*/
+        flex-direction: column;
+        /* width: 80%; */
+        /* background-color: #39e3e8; */
+    
+    }
+
+    #rule-list {width: 90%;}
+    #rules-div > p {width: 90%;
+                    font-size: 100%;
+                    font-weight: 600;
+    }
+
+    .bttns-div {max-width: 80%;}
 }
