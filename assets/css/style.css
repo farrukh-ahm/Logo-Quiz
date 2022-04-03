@@ -295,7 +295,7 @@ label {margin-right: 1.25rem;
 
 @media screen and (max-width: 450px) {
 
-    #game-area {min-height: 950px;}
+    #game-area {min-height: 900px;}
 
     #options-area {grid-template-columns: repeat(1, 1fr);
         bottom: 13rem;
@@ -327,4 +327,6 @@ label {margin-right: 1.25rem;
     }
 
     .bttns-div {max-width: 80%;}
+
+    #result-message-area {width: 80%;}
 }
