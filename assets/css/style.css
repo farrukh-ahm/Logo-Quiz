@@ -74,7 +74,7 @@ h2 {text-align: center;
        
 }
 
-#result-message-area {width: 50%;
+#result-message-area {min-width: 50%;
                       height: 6.25rem;
                       position: absolute;
                       left: 50%;
