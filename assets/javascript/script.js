@@ -5,7 +5,7 @@ let optionList = {"KFC": ["McDonalds", "KFC", "Taco-Bell", "Chipotle"],
                   "Pizza-Hut": ["Pizza-Hut", "Domino's", "Papa-John's", "California-Pizza"],
                   "Costa-Coffee": ["Starbucks", "Lavazza", "Butlers", "Costa-Coffee"],
                   "Monster-Energy": ["Red-Bull", "Monster-Energy", "Lucozade", "Advance.GG"],
-                  "Bentley": ["Aston-Martin", "Bentley", "Rolls-Royce", "Beetle"],
+                  "Acura": ["Aston-Martin", "Acura", "Rolls-Royce", "Alpina"],
                   "Cadillac": ["Cadillac", "Volvo", "Mercedes", "Bugatti"],
                   "Corvette": ["Alfa-Romeo", "Ford", "Corvette", "Citroen"],
                   "Citroen": ["Citroen", "Toyota", "Subaru", "Infiniti"],
@@ -25,19 +25,19 @@ let optionList = {"KFC": ["McDonalds", "KFC", "Taco-Bell", "Chipotle"],
                   "WWF": ["Pandas", "PETA", "WWF", "Wildlife-Protection"],
                   "Unilever": ["Union", "Unilever", "United-Nations", "UFOCOM"],
                   "United-Nations": ["NATO", "Peace-Keepers", "United-Nations", "WHO"],
-                  "Atletico-Madrid": ["Atletico-Madrid", "Real-Madrid", "Sevilla-FC", "RCD-Mallorca"],
+                  "Fiorentina": ["Atletico-Madrid", "AC-Milan", "Fiorentina", "FC-Dallas"],
                   "Borussia-Dortmund": ["Bayern-Munich", "BSC-YoungBoys", "Borussia-Dortmund", "SL-Benfica"],
                   "Inter-Milan": ["AC-Milan", "Inter-Milan", "Atlanta-BC", "Genoa-CFC"],
-                  "Real-Madrid": ["Real-Madrid", "Sevilla-FC", "FC-Barcelona", "Arsenal"],
+                  "FC-Barcelona": ["Real-Madrid", "Sevilla-FC", "FC-Barcelona", "Arsenal"],
                   "AS-Roma": ["WolfsburgFC", "AS-Roma", "Lazio", "Napoli"],
 }
 
 let aiChoice = ["KFC", "Gatorade", "Pizza-Hut", "Monster-Energy", "Costa-Coffee",
-                "Bentley", "Cadillac", "Corvette", "Citroen", "Infiniti",
+                "Acura", "Cadillac", "Corvette", "Citroen", "Infiniti",
                 "Jordan", "Armani", "Chanel", "DC-Shoes", "Fruit-Of-The-Loom",
                 "Airtel", "AMD", "Apple", "Huawei", "Motorola",
                 "Accenture", "Amnesty-International", "WWF", "Unilever", "United-Nations",
-                "Atletico-Madrid", "Borussia-Dortmund", "Inter-Milan", "Real-Madrid", "AS-Roma"
+                "Fiorentina", "Borussia-Dortmund", "Inter-Milan", "FC-Barcelona", "AS-Roma"
 ]
 
 /// ----------------- CALLING THE ELEMENTS
@@ -45,7 +45,7 @@ let aiChoice = ["KFC", "Gatorade", "Pizza-Hut", "Monster-Energy", "Costa-Coffee"
 let logoSelector;
 let questionNumber = 1;
 let mode;
-document.addEventListener("DOMContentLoaded", function(){
+///document.addEventListener("DOMContentLoaded", function(){
     let buttons = document.getElementsByTagName("button");
     for (let button of buttons){
         button.addEventListener("click", function(){
@@ -62,13 +62,13 @@ document.addEventListener("DOMContentLoaded", function(){
             else {alert ("Break")}
         })
 }
-})
+//})
 
 
 /// ----------------------- Start/display the question
 
 function displayQuestion(mode){
-    let resultMessage = document.getElementById("result-message");               // Calling div containing the relust message.
+    let resultMessage = document.getElementById("result-message");               // Calling div containing the result message.
     let displayElements = document.getElementsByClassName("display-property");   // Calling options and submit button elements.
     for (let display of displayElements){
         display.style.display = "initial";                                       // Displaying the options area by changing "none" property

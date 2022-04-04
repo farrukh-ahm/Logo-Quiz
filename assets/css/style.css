@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans:wght@300&display=swap');
 
-                        /********** GENERAL STYLING ************/
+                        /* ------------ GENERAL STYLING ------------ */
 * {margin: 0;
    padding: 0;
    box-sizing: border-box;
@@ -21,7 +21,7 @@ h1, h2 {text-transform: capitalize;
         color: #ff7a90;
 }
 
-                                            /************** HEADER AREA ****************/
+                                            /* ------------ HEADER AREA ------------- */
 
 #body-head {text-align: center;
             max-width: 60%;
@@ -41,7 +41,7 @@ h2 {text-align: center;
     /* padding: 1.25rem; */
 }
 
-                                            /********************* GAME AREA *******************/
+                                            /* ------------- GAME AREA ---------------- */
 
 #game-area {max-width: 62.5rem; /*1000px*/
             min-height: 56.25rem; /*900px*/
@@ -171,7 +171,7 @@ label {margin-right: 1.25rem;
 
 .display-property {display: none;}
 
-                                            /************* RULES SECTION *******************/
+                                            /* ------------ RULES SECTION -------------- */
 
 #rules-div {max-width: 62.5rem;
             min-height: 12.5rem;
@@ -204,7 +204,7 @@ label {margin-right: 1.25rem;
                 /* background-color: #51efc9; */
 }
 
-                                            /************* START-RESET BUTTON SECTION ***************/
+                                            /* ---------------- START-RESET BUTTON SECTION ------------- */
 
 #start-reset-section {max-width: 62.5rem;
                       height: 6.5rem;
