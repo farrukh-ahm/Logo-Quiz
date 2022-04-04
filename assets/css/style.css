@@ -27,18 +27,15 @@ h1, h2 {text-transform: capitalize;
             max-width: 60%;
             margin: auto;
             margin-top: 1.25rem;
-    /*background-color: #3e4a3d;*/}                                             
+}                                             
 
 h1 {text-align: center;
     margin: auto;
-    /* margin-top: 1.25rem;
-    padding: 1.25rem; */
 }
 
 h2 {text-align: center;
     margin: auto;
     margin-top: 1.25rem;
-    /* padding: 1.25rem; */
 }
 
                                             /* ------------- GAME AREA ---------------- */
@@ -59,19 +56,11 @@ h2 {text-align: center;
              left: 50%;
              transform: translateX(-50%);
              border-radius: 20px;
-             /* margin: 1.25rem auto;*/
-             /* background-color: #39e3e8; */
              overflow: hidden;
 }
 
 #logo {height: 100%;
        width: 100%;
-       /* margin: 10% auto; */
-       /* border-radius: 10px; */
-       /* background-repeat: no-repeat;
-       background-position: center;
-       background-size: 50%; */
-       
 }
 
 #result-message-area {min-width: 50%;
@@ -82,14 +71,12 @@ h2 {text-align: center;
                       bottom: 23.5rem;
                       display: flex;
                       justify-content: center;
-                      /* background-color: #3be9db; */
 }
 
 #result-message {font-size: 150%;
                  font-weight: 700;
                  margin: auto;
                  letter-spacing: 1px;
-                 /* font-family: 'Indie Flower', cursive; */
 }
 
 #options-area {width: 100%;
@@ -99,23 +86,17 @@ h2 {text-align: center;
                bottom: 15.25rem; /*244px*/
                display: flex;
                gap: 1rem
-               /* justify-content: center; */
-               /* background-color: #3be9db; */
 }
 
-#options-area > span {/*display: flex;*/
-    /* width: 33%;
-    min-height: 75%; */
-    margin: auto;
-    /* background-color: brown; */
+#options-area > span {margin: auto;
 }
+
 .radio-buttons {margin: 1.25rem 0.5rem 1.25rem 1.563rem;
                 width: 20px;
                 height: 20px;
 }
 
 label {margin-right: 1.25rem;
-       /* background-color: #39e3e8; */
        font-size: 20px;
 }
 
@@ -126,7 +107,6 @@ label {margin-right: 1.25rem;
                  left: 25%;
                  display: flex;
                  justify-content: center;
-                 /* background-color: #3e4a3d; */
 }
 
 #submit-button {width: 90px;
@@ -154,10 +134,8 @@ label {margin-right: 1.25rem;
     bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
-    /* margin: 1.5rem auto; */
     display: flex;
     gap: 2rem;
-    /* background-color: #39e3e8; */
 
 }
 
@@ -166,7 +144,6 @@ label {margin-right: 1.25rem;
        font-size: 130%;
        font-weight: 600;
        text-align: center;
-       /* background-color: firebrick; */
 }
 
 .display-property {display: none;}
@@ -196,7 +173,6 @@ label {margin-right: 1.25rem;
             transform: translateX(-50%);
             letter-spacing: 1px;
             line-height: 1.5rem;
-            /* background-color: #39e3e8; */
 }
 
 #rules-div > p {width: 50%;
@@ -207,7 +183,6 @@ label {margin-right: 1.25rem;
                 font-size: 120%;
                 font-weight: 700;
                 color: #ff7a90;
-                /* background-color: #51efc9; */
 }
 
                                             /* ---------------- START-RESET BUTTON SECTION ------------- */
@@ -218,7 +193,6 @@ label {margin-right: 1.25rem;
                       display: flex;
                       gap: 1rem;
                       flex-direction: column;
-                      /* background-color: #3be9db;                       */
 }
 
 .bttns-div {max-width: 50%;
@@ -228,7 +202,6 @@ label {margin-right: 1.25rem;
             display: flex;
             justify-content: center;
             gap: 1rem;
-            /* background-color: #3e4a3d; */
 }
 
 .bttns {height: 40px;
@@ -258,10 +231,6 @@ label {margin-right: 1.25rem;
 @media screen and (max-width: 740px){
     #rule-list {width: 70%;}
     #rules-div > p {width: 70%;}
-    /* #score-area {gap:0;
-        width: 80%;
-        background-color: #6ff3b4; 
-}*/
 }
 
 
@@ -274,16 +243,9 @@ label {margin-right: 1.25rem;
                    align-items: start;
 }
 
-#options-area > span {/*display: flex;*/
-    /* width: 33%;
-    min-height: 75%; */
-    margin: initial;
-    /* background-color: brown; */
-}
-    #score-area {gap:0;
-                 /* width: 80%; */
-                 /* background-color: #6ff3b4; */
-    }
+    #options-area > span {margin: initial;}
+    
+    #score-area {gap:0;}
 }
 
 
@@ -320,12 +282,7 @@ label {margin-right: 1.25rem;
 
     #result-message-area {bottom: 30rem;}
     
-    #score-area {/*display: block;*/
-        flex-direction: column;
-        /* width: 80%; */
-        /* background-color: #39e3e8; */
-    
-    }
+    #score-area {flex-direction: column;}
 
     #rule-list {width: 90%;}
     #rules-div > p {width: 90%;

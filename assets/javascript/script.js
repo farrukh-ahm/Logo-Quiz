@@ -1,4 +1,4 @@
-/// -----------------Create Array and Object for question and options
+/// -----------------Create Array and Object for question and options ------------------
 
 let optionList = {"KFC": ["McDonalds", "KFC", "Taco-Bell", "Chipotle"],
                   "Gatorade": ["GFuel", "Lucozade", "Gatorade", "Electrolit"],
@@ -40,32 +40,29 @@ let aiChoice = ["KFC", "Gatorade", "Pizza-Hut", "Monster-Energy", "Costa-Coffee"
                 "Fiorentina", "Borussia-Dortmund", "Inter-Milan", "FC-Barcelona", "AS-Roma"
 ]
 
-/// ----------------- CALLING THE ELEMENTS
+/// ----------------- CALLING THE ELEMENTS ---------------------
 
 let logoSelector;
 let questionNumber = 1;
 let mode;
-///document.addEventListener("DOMContentLoaded", function(){
-    let buttons = document.getElementsByTagName("button");
-    for (let button of buttons){
-        button.addEventListener("click", function(){
-            if (this.getAttribute("data-button") === "start"){
-                mode = parseInt(this.getAttribute("data-mode"))
-                displayQuestion(mode);
-                }
-            else if (this.getAttribute("data-button") === "reset"){
-                resetGame();
+let buttons = document.getElementsByTagName("button");
+for (let button of buttons){
+    button.addEventListener("click", function(){
+        if (this.getAttribute("data-button") === "start"){
+            mode = parseInt(this.getAttribute("data-mode"))
+            displayQuestion(mode);
             }
-            else if (this.getAttribute("data-button") === "submit"){
-                displayResult(mode);
-            }
-            else {alert ("Break")}
-        })
+        else if (this.getAttribute("data-button") === "reset"){
+            resetGame();
+        }
+        else if (this.getAttribute("data-button") === "submit"){
+            displayResult(mode);
+        }
+        else {alert ("Break")}
+    })
 }
-//})
 
-
-/// ----------------------- Start/display the question
+/// ----------------------- Start/display the question ------------------
 
 function displayQuestion(mode){
     let resultMessage = document.getElementById("result-message");               // Calling div containing the result message.
@@ -95,14 +92,13 @@ function displayQuestion(mode){
     }}
     else{
         let correctScore = document.getElementById("correct-answer").textContent;
-        // let incorrectScore = document.getElementById("incorrect-answer").textContent;
         resultMessage.textContent = `FINISH! Score: ${correctScore}/${mode}`
         setTimeout(() => { resetGame(); }, 1500);
 };
     questionNumber++;
 }
 
-/// ------------------------ Display Result
+/// ------------------------ Display Result -----------------
 
 function displayResult(mode) {
     let resultMessage = document.getElementById("result-message");
@@ -112,17 +108,15 @@ function displayResult(mode) {
         resultMessage.innerText = "CORRECT!";
         setTimeout(() => { displayQuestion(mode); }, 1000);
         correctScore();
-        // displayQuestion(mode);
     }
     else {
         resultMessage.innerText = "SORRY!";
         setTimeout(() => { displayQuestion(mode); }, 1000);
         incorrectScore();
-        // displayQuestion(mode);
 }
 }
 
-/// ------------------------ Game Reset/Restart
+/// ------------------------ Game Reset/Restart ------------------
 
 function resetGame() {
     let imageSelector = document.getElementById("logo");
@@ -141,21 +135,19 @@ function resetGame() {
     questionNumber = 1;
 }
 
-/// ------------------------ Check Answer
+/// ------------------------ Check Answer ------------------
 
 function checkAnswer() {
     let radios = document.getElementsByTagName("input");
     for (let radio of radios){
         if (radio.checked){
-            // let selected = radio.id;
             let checkLabel = document.querySelector(`label[for=${radio.id}]`).textContent;
-            // console.log(checkLabel)
             return (checkLabel);
         }
     }
 }
 
-/// ---------------------------- Increment Correct Score
+/// ---------------------------- Increment Correct Score -----------------
 
 function correctScore() {
     let rightAnswer = document.getElementById("correct-answer");
@@ -163,7 +155,7 @@ function correctScore() {
     rightAnswer.innerText = score+1;
 }
 
-/// ----------------------------- Increment Incorrect Score
+/// ----------------------------- Increment Incorrect Score --------------------
 
 function incorrectScore() {
     let wrongAnswer = document.getElementById("incorrect-answer");
