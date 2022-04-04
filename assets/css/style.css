@@ -182,10 +182,16 @@ label {margin-right: 1.25rem;
             background-color: rgb(252, 252, 212, 0.5);
 }
 
+#rules-div > h3 {position: absolute;
+                 top: 1rem;
+                 left: 50%;
+                 transform: translateX(-50%);
+}
+
 #rule-list {width: 50%;
             height: 70%;
             position: absolute;
-            top: 1.25rem;
+            top: 2.35rem;
             left: 50%;
             transform: translateX(-50%);
             letter-spacing: 1px;
