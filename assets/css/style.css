@@ -14,7 +14,7 @@ body { background-image: var(--bg-color);
 }
 
 h1, h2 {text-transform: capitalize;
-        size: 350%;
+        font-size: 200%;
         font-family: 'Indie Flower', cursive;;
         font-weight: 950;
         letter-spacing: .5rem;
@@ -295,6 +295,7 @@ label {margin-right: 1.25rem;
 
 @media screen and (max-width: 450px) {
 
+    h1, h2 {font-size: 150%;} 
     #game-area {min-height: 900px;}
 
     #options-area {grid-template-columns: repeat(1, 1fr);
