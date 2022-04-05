@@ -30,7 +30,7 @@ let optionList = {"KFC": ["McDonalds", "KFC", "Taco-Bell", "Chipotle"],
                   "Inter-Milan": ["AC-Milan", "Inter-Milan", "Atlanta-BC", "Genoa-CFC"],
                   "FC-Barcelona": ["Real-Madrid", "Sevilla-FC", "FC-Barcelona", "Arsenal"],
                   "AS-Roma": ["WolfsburgFC", "AS-Roma", "Lazio", "Napoli"],
-}
+};
 
 let aiChoice = ["KFC", "Gatorade", "Pizza-Hut", "Monster-Energy", "Costa-Coffee",
                 "Acura", "Cadillac", "Corvette", "Citroen", "Infiniti",
@@ -38,7 +38,7 @@ let aiChoice = ["KFC", "Gatorade", "Pizza-Hut", "Monster-Energy", "Costa-Coffee"
                 "Airtel", "AMD", "Apple", "Huawei", "Motorola",
                 "Accenture", "Amnesty-International", "WWF", "Unilever", "United-Nations",
                 "Fiorentina", "Borussia-Dortmund", "Inter-Milan", "FC-Barcelona", "AS-Roma"
-]
+];
 
 /// ----------------- CALLING THE ELEMENTS ---------------------
 
@@ -49,7 +49,7 @@ let buttons = document.getElementsByTagName("button");
 for (let button of buttons){
     button.addEventListener("click", function(){
         if (this.getAttribute("data-button") === "start"){
-            mode = parseInt(this.getAttribute("data-mode"))
+            mode = parseInt(this.getAttribute("data-mode"));
             displayQuestion(mode);
             }
         else if (this.getAttribute("data-button") === "reset"){
@@ -58,9 +58,9 @@ for (let button of buttons){
         else if (this.getAttribute("data-button") === "submit"){
             displayResult(mode);
         }
-        else {alert ("Break")}
-    })
-}
+        else {alert ("Break");}
+    });
+};
 
 /// ----------------------- Start/display the question ------------------
 
@@ -77,7 +77,7 @@ function displayQuestion(mode){
         }
     }
     if (questionNumber <= mode){
-        resultMessage.textContent = ""
+        resultMessage.textContent = "";
     let randomNumber = Math.floor(Math.random() * 30);
     logoSelector = aiChoice[randomNumber];
     let options = optionList[logoSelector];
@@ -88,11 +88,11 @@ function displayQuestion(mode){
     let i = 0;
     for (let label of labels){
         label.textContent = options[i];
-        i++
+        i++;
     }}
     else{
         let correctScore = document.getElementById("correct-answer").textContent;
-        resultMessage.textContent = `FINISH! Score: ${correctScore}/${mode}`
+        resultMessage.textContent = `FINISH! Score: ${correctScore}/${mode}`;
         setTimeout(() => { resetGame(); }, 1500);
 };
     questionNumber++;
@@ -124,13 +124,13 @@ function resetGame() {
     let resultMessage = document.getElementById("result-message");
     let correctScore = document.getElementById("correct-answer");
     let incorrectScore = document.getElementById("incorrect-answer");
-    imageSelector.src = `./assets/images/question.png`;
-    imageSelector.style.height = "100%"
+    imageSelector.src = `./assets/images/Question.png`;
+    imageSelector.style.height = "100%";
     resultMessage.textContent = "";
     correctScore.innerText = "0";
     incorrectScore.innerText = "0";
     for (let display of displayElements){
-        display.style.display = "none"
+        display.style.display = "none";
     }
     questionNumber = 1;
 }
