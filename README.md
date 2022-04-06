@@ -66,7 +66,7 @@ The website is targeted towards any group of individuals interested in logos.
         - The user can conveniently select any game mode they want to play according to their liking.
         - If the user wants to reset the game at any time, they can easily do so by clicking on the Reset button and they can got again by choosing a game mode.
         <br>
-        <img src="./assets/readme-file-images/game-modes-and-reset.PNG">
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  <img src="./assets/readme-file-images/game-modes-and-reset.PNG">
         <br>
     
    ### Features Left To Implement:
