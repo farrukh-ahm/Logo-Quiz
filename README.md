@@ -1,108 +1,138 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# LOGO QUIZ
 
-Welcome farrukh-ahm,
+[View The Live Project Here](https://farrukh-ahm.github.io/Logo-Quiz/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The Logo Quiz is for people who would like to test their knowledge of logos, with questions ranging from popular food chain to soccer teams and tech companies. The questions are picked up randomly by the system and 4 options given to choose from, eliminating the frustration of any spelling mistake due to manual input or the itch of knowing the logo but not being able to come up with the brand it’s associated with.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The website is targeted towards any group of individuals interested in logos. 
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![Image of Responsive Website in different devices](./assets/readme-file-images/responsive-web.PNG)
 
-`python3 -m http.server`
+## Features:
 
-A blue button should appear to click: _Make Public_,
+   ### UI/UX:
 
-Another blue button should appear to click: _Open Browser_.
+   - #### Colour Scheme
+      1. The gradient background is based on three basic colors, LemonChiffon, PaleGreen and LightSkyBlue.
+      2. The h1, h2 and h3 elements use LightPink color whereas the body fonts are HunterGreen.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+   - #### Typography
+      1.  The Josefin Sans font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. The website header uses Indie Flower font with Cursive as backup.
+      2. The Indie Flower font gives the heading a very palyful and fun appearance.
+      3. The body font of Josefin Sans is easy to read and is easy on eyes, while providing a nice gaming experience. 
+   
+   ### Existing Features:
 
-A blue button should appear to click: _Make Public_,
+   1. #### Header
+    
+       -   Displayed at the top of the webpage. Fonts and colours used for this are both payful and attractive to give off an ambience of fun and excitement.
+       -   The colour sits perfectly against the body's gradient background and clearly mentions the game the user can engage with.
 
-Another blue button should appear to click: _Open Browser_.
+        <br>
+        <img src="./assets/readme-file-images/header.PNG" alt="Image of the header title.">
+        <br>
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+   2. #### Game Area
+    
+       - The Game-Area section displays the logos of the various brands and options the user can select from. This area displays the game score too.
+       - When the page loads or the game resets, the user can only see the default image with score card at the bottom of the section.
+       - Once the user has chosen their desired game mode, the game area displays randomly selected brand's logo and 4 options associated with it.
+       - The user can select any one of the 4 options and click on the submit button.
+       - Once submitted, a message is displayed letting the user know whether their answer was correct or not. Score is added accordingly.
+       - Once the game is over, another message displays telling the user that the game is over and displays the final score.
+       - The game resets once the question-limit is reached according to the game mode selected by the user.
 
-To log into the Heroku toolbelt CLI:
+        <br>
+        <img src="./assets/readme-file-images/Game-Area-1.PNG">
+        <br>
+        <br>
+        <img src="./assets/readme-file-images/Game-area-2.PNG">
+        <br>
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+   3. #### Game Mode Card
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+        - The Game Mode card clearly shows the available game modes which a user can select and play.
+        - There are 3 modes, as mentioned in the card, Short, Medium and Long.
+        - The mode determines the number of questions that will be presented to the user and is mentioned in this section.
 
-------
+        <br>
+        <img src="./assets/readme-file-images/Game-Modes.PNG">
+        <br>
 
-## Release History
+   4. #### Buttons for Game Modes and Game Reset
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+        - The Game Mode selection buttons are available just below the Game Mode instruction card.
+        - The user can conveniently select any game mode they want to play according to their liking.
+        - If the user wants to reset the game at any time, they can easily do so by clicking on the Reset button and they can got again by choosing a game mode.
+        <br>
+        <img src="./assets/readme-file-images/game-modes-and-reset.PNG">
+        <br>
+    
+   ### Features Left To Implement:
+- Would like to add function to check that a question is not being repeated during one cycle of the chosen game mode. Would need a bit more time to work on this as it would be little more complicated. 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## Technologies Used
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Languages Used
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+-   [HTML5](https://en.wikipedia.org/wiki/HTML5)
+-   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Frameworks, Libraries & Programs Used
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+1. [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the 'Josefin Sans' and 'Indie Flower' font into the style.css file which is used on the website.
+2. [ColorSpace:](https://mycolor.space/)
+    - The body gradient and the font colors were picked from ColorSpace website, which also provided all the colors used in gradient.
+3. [Git](https://git-scm.com/)
+    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+4. [GitHub:](https://github.com/)
+    - GitHub is used to store the project's code after being pushed from Git.
+5. [Balsamiq:](https://balsamiq.com/)
+    - Balsamiq was used to create the wireframes during the design process.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Testing
+The website has been tested on different devices and screen sizes, eg. a 21.5inch monitor, 15inch laptop screen, iPad, iPhone and Android devices. The website runs smoothly and generates appropriate results without any issues. The hover effect on the buttons work perfectly on the computer, the messages are dispalyed proeprly and the scores are added as intended. The images of the brand logos displays nicely on all devices without any issue.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+-   [W3C Markup Validator](https://validator.w3.org/#validate_by_input) - [Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffarrukh-ahm.github.io%2FLogo-Quiz%2F)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffarrukh-ahm.github.io%2FLogo-Quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+-   [JS Hint](https://jshint.com/)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+The website was also tested through Lighthouse on Chrome for its Accessibility Score.<br>
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![Lighthouse Score](./assets/readme-file-images/lighthouse.PNG)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Bugs
+There were some issues with the diplay of the images at first, which got sorted by working on the image sizes. Also, there was an issue with the display of the result at the end, which was solved by using the setTimeout() method in the JavaScript.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Deployment
+The project was deployed to GitHub Pages using the following steps...
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/farrukh-ahm/logo-quiz.git)
+2. At the top of the Repository (not the top of the page), locate the "Settings" Button on the menu.
+3. On the Settings page, locate the "Pages" link on the left side, under the "Code and Automation" category. 
+4. Under "Source", click the dropdown called "None" and select "Master Branch" or "Main".
+5. The page will automatically refresh.
+6. the new published website's address [link](https://farrukh-ahm.github.io/logo-quiz/) will be displayed at the top of the "GitHub Pages" section.
 
-------
+## Credits
 
-## FAQ about the uptime script
+* ### Media
 
-**Why have you added this script?**
+    - All the images used on the website are free-to-use provided by [Unsplash](https://unsplash.com/) and [1000Logos](https://1000logos.net/).
+    - The default image used on the website is hosted by Marcel Strauß on [Unsplash](https://unsplash.com/)
+    - The gradient was selected from [ColorSpace](https://mycolor.space/gradient3) website.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+* ### Code
 
-**How will this affect me?**
+The solution for setting a time delay before next question is displayed and before the reset happens was used from an article by James Hibbard published on [SitePoint](https://www.sitepoint.com/delay-sleep-pause-wait/) 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Acknowledgements
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+- My mentor for continuous help and valuable feedback.
+- Tutor support at Code Institute for their support.
