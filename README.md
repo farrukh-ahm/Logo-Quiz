@@ -41,7 +41,7 @@ The website is targeted towards any group of individuals interested in logos.
        - The user can select any one of the 4 options and click on the submit button.
        - Once submitted, a message is displayed letting the user know whether their answer was correct or not. Score is added accordingly.
        - Once the game is over, another message displays telling the user that the game is over and displays the final score.
-       - The game resets once the question-limit is reached according to the game mode selected by the user.
+       - The user can then reset the game manually and replay their desired game mode.
 
         <br>
         <img src="./assets/readme-file-images/Game-Area-1.PNG">
