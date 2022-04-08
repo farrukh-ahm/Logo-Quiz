@@ -93,7 +93,13 @@ function displayQuestion(mode){
     else{
         let correctScore = document.getElementById("correct-answer").textContent;
         resultMessage.textContent = `FINISH! Score: ${correctScore}/${mode}`;
-        setTimeout(() => { resetGame(); }, 1500);
+        let imageSelector = document.getElementById("logo");
+        imageSelector.src = `./assets/images/Question.png`;
+        imageSelector.style.height = "100%";
+        // setTimeout(() => { resetGame(); }, 1500);
+        for (let display of displayElements){
+            display.style.display = "none";                                       // Removing option area and submit button
+        }
 };
     questionNumber++;
 }
