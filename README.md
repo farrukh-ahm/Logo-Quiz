@@ -2,7 +2,7 @@
 
 [View The Live Project Here](https://farrukh-ahm.github.io/Logo-Quiz/)
 
-The Logo Quiz is for people who would like to test their knowledge of logos, with questions ranging from popular food chain to soccer teams and tech companies. The questions are picked up randomly by the system and 4 options given to choose from, eliminating the frustration of any spelling mistake due to manual input or the itch of knowing the logo but not being able to come up with the brand it’s associated with.
+The Logo Quiz is for people who would like to test their knowledge of logos, with questions ranging from the popular food chains to soccer teams and tech companies. The questions are picked up randomly by the system and 4 options are given to choose from, eliminating the frustration of any spelling mistake due to manual input or the itch of knowing the logo but not being able to come up with the brand it’s associated with.
 
 The website is targeted towards any group of individuals interested in logos. 
 
@@ -19,14 +19,14 @@ The website is targeted towards any group of individuals interested in logos.
 
    - #### Typography
       1.  The Josefin Sans font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. The website header uses Indie Flower font with Cursive as backup.
-      2. The Indie Flower font gives the heading a very palyful and fun appearance.
-      3. The body font of Josefin Sans is easy to read and is easy on eyes, while providing a nice gaming experience. 
+      2. The Indie Flower font gives the heading a very playful and fun appearance.
+      3. The body font of Josefin Sans is easy to read and is easy on the eyes, while providing a nice gaming experience. 
    
    ### Existing Features:
 
    1. #### Header
     
-       -   Displayed at the top of the webpage. Fonts and colours used for this are both payful and attractive to give off an ambience of fun and excitement.
+       -   Displayed at the top of the webpage. Fonts and colours used for this are both playful and attractive to give off an ambience of fun and excitement.
        -   The colour sits perfectly against the body's gradient background and clearly mentions the game the user can engage with.
 
         <br>
@@ -39,8 +39,8 @@ The website is targeted towards any group of individuals interested in logos.
        - When the page loads or the game resets, the user can only see the default image with score card at the bottom of the section.
        - Once the user has chosen their desired game mode, the game area displays randomly selected brand's logo and 4 options associated with it.
        - The user can select any one of the 4 options and click on the submit button.
-       - Once submitted, a message is displayed letting the user know whether their answer was correct or not. Score is added accordingly.
-       - Once the game is over, another message displays telling the user that the game is over and displays the final score.
+       - Once submitted, a message is displayed letting the user know whether their answer was correct or not. The Score is added accordingly.
+       - Once the game is over, another message displays telling the user that the game is over, showing the final score.
        - The user can then reset the game manually and replay their desired game mode.
 
         <br>
@@ -64,7 +64,7 @@ The website is targeted towards any group of individuals interested in logos.
 
         - The Game Mode selection buttons are available just below the Game Mode instruction card.
         - The user can conveniently select any game mode they want to play according to their liking.
-        - If the user wants to reset the game at any time, they can easily do so by clicking on the Reset button and they can got again by choosing a game mode.
+        - If the user wants to reset the game at any time, they can easily do so by clicking on the Reset button and they can play again by choosing a game mode.
         <br>
         &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  <img src="./assets/readme-file-images/game-modes-and-reset.PNG">
         <br>
@@ -84,9 +84,9 @@ The website is targeted towards any group of individuals interested in logos.
 ### Frameworks, Libraries & Programs Used
 
 1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Josefin Sans' and 'Indie Flower' font into the style.css file which is used on the website.
+    - Google fonts were used to import the 'Josefin Sans' and 'Indie Flower' fonts into the style.css file which is used on the website.
 2. [ColorSpace:](https://mycolor.space/)
-    - The body gradient and the font colors were picked from ColorSpace website, which also provided all the colors used in gradient.
+    - The body gradient and the font colors were picked from ColorSpace website, which also provided all the colors used in the gradient.
 3. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 4. [GitHub:](https://github.com/)
@@ -95,7 +95,7 @@ The website is targeted towards any group of individuals interested in logos.
     - Balsamiq was used to create the wireframes during the design process.
 
 ## Testing
-The website has been tested on different devices and screen sizes, eg. a 21.5inch monitor, 15inch laptop screen, iPad, iPhone and Android devices. The website runs smoothly and generates appropriate results without any issues. The hover effect on the buttons work perfectly on the computer, the messages are dispalyed proeprly and the scores are added as intended. The images of the brand logos displays nicely on all devices without any issue.
+The website has been tested on different devices and screen sizes, eg. a 21.5inch monitor, 15inch laptop screen, iPad, iPhone and Android devices. The website runs smoothly and generates appropriate results without any issues. The hover effect on the buttons works perfectly on the computer, the messages are displayed properly and the scores are added as intended. The images of the brand logos display nicely on all devices without any issue.
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
@@ -118,7 +118,7 @@ The project was deployed to GitHub Pages using the following steps...
 3. On the Settings page, locate the "Pages" link on the left side, under the "Code and Automation" category. 
 4. Under "Source", click the dropdown called "None" and select "Master Branch" or "Main".
 5. The page will automatically refresh.
-6. the new published website's address [link](https://farrukh-ahm.github.io/logo-quiz/) will be displayed at the top of the "GitHub Pages" section.
+6. The new published website's address [link](https://farrukh-ahm.github.io/Logo-Quiz/) will be displayed at the top of the "GitHub Pages" section.
 
 ## Credits
 
@@ -130,7 +130,7 @@ The project was deployed to GitHub Pages using the following steps...
 
 * ### Code
 
-The solution for setting a time delay before next question is displayed and before the reset happens was used from an article by James Hibbard published on [SitePoint](https://www.sitepoint.com/delay-sleep-pause-wait/) 
+The solution for setting a time delay before next question is displayed was used from an article by James Hibbard published on [SitePoint](https://www.sitepoint.com/delay-sleep-pause-wait/) 
 
 ## Acknowledgements
 
