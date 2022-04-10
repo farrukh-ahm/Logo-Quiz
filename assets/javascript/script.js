@@ -60,7 +60,7 @@ for (let button of buttons){
         }
         else {alert ("Break");}
     });
-};
+}
 
 /// ----------------------- Start/display the question ------------------
 
@@ -99,7 +99,7 @@ function displayQuestion(mode){
         for (let display of displayElements){
             display.style.display = "none";                                       // Removing option area and submit button
         }
-};
+}
     questionNumber++;
 }
 
