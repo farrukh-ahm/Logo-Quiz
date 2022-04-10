@@ -254,7 +254,7 @@ label {margin-right: 1.25rem;
 }
 
 
-                    /* ---- 520px and below --- */
+                    /* ---- 550px and below --- */
 
 @media screen and (max-width: 550px) {
     /* #score-area {width: 30rem;} */
@@ -264,7 +264,7 @@ label {margin-right: 1.25rem;
     
 }
 
-                    /* ---- 450px and below --- */
+                    /* ---- 466px and below --- */
 
 @media screen and (max-width: 466px) {
 
@@ -291,7 +291,9 @@ label {margin-right: 1.25rem;
     #score-area {flex-direction: column;}
 
     #rules-div {min-height: 13rem;}
-    #rule-list {width: 90%;}
+    #rule-list {width: 90%;
+                margin-left: 2.5px;
+    }
     #rules-div > p {width: 90%;
                     font-size: 100%;
                     font-weight: 600;
@@ -305,4 +307,9 @@ label {margin-right: 1.25rem;
     .bttns-div {max-width: 80%;}
 
     #result-message-area {width: 80%;}
+}
+
+@media screen and (max-width: 360px) {
+    #body-head {min-width: 80%;}
+    #rules-div {min-height: 14rem;}
 }
